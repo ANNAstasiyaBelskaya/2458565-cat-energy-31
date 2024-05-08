@@ -11,6 +11,11 @@
   <link rel="apple-touch-icon" href="favicons/180.png"><!-- 180×180 -->
   <link rel="manifest" href="manifest.webmanifest">
   <script src="scripts/index.js" defer="defer"></script>
+  <link rel="icon" href="favicon.ico"><!-- 32x32 -->
+  <link rel="icon" href="favicons/icon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="favicons/180.png"><!-- 180×180 -->
+  <link rel="manifest" href="manifest.webmanifest">
+  <script src="scripts/index.js" defer="defer"></script>
 </head>
 
 <body>
@@ -170,6 +175,11 @@
         <p class="catalog__legend">На самом деле вкусов гораздо больше!</p>
         <button class="catalog__button catalog__button--accent button" type="button">Показать все</button>
       </div>
+      <div class="catalog__button-container">
+        <p class="catalog__text">Показать еще 100500 товаров</p>
+        <p class="catalog__legend">На самом деле вкусов гораздо больше!</p>
+        <button class="catalog__button catalog__button--accent button" type="button">Показать все</button>
+      </div>
     </section>
     <section class="products">
       <h2 class="products__title">Дополнительные товары</h2>
@@ -202,12 +212,16 @@
       <div class="products__promo-container">
         <p class="products__description">Закажите все и получите чехол для кота в подарок!</p>
       </div>
+      <div class="products__promo-container">
+        <p class="products__description">Закажите все и получите чехол для кота в подарок!</p>
+      </div>
     </section>
     <section class="subscription">
       <h2 class="subscription__title">Акции и новинки</h2>
       <p class="subscription__description">Подпишитесь на наши новости и не пропустите ни одного предложения!</p>
       <form class="subscription__form" action="https://echo.htmlacademy.ru/" method="post">
         <label class="visually-hidden" for="email-field">Введите свой e-mail</label>
+        <input class="subscription__form-input" type="email" name="e-mail" id="email-field" placeholder="kuklachev@gmail.com">
         <input class="subscription__form-input" type="email" name="e-mail" id="email-field" placeholder="kuklachev@gmail.com">
         <button class="subscription__button button" type="button">Подписаться</button>
       </form>
@@ -234,6 +248,17 @@
           </picture>
         </div>
       </div>
+      <div class="contacts__map">
+        <div class="contacts__map-pin">
+          <span class="visually-hidden">Метка на карте</span>
+        </div>
+        <picture>
+          <source media="(min-width: 1200px)" width="1440" height="400" type="image/png" srcset="images/map-desktop@1x.png 1x, images/map-desktop@2x.png 2x">
+          <source media="(min-width: 768px)" width="768" height="400" type="image/png" srcset="images/map-tablet@1x.png 1x, images/map-tablet@2x.png 2x">
+          <img class="contacts__map-image" src="images/map-mobile@1x.png" srcset="images/map-mobile@2x.png 2x" width="320" height="362" alt="Местоположение офиса компании Cat Energy">
+        </picture>
+      </div>
+      </div>
     </section>
   </main>
   <footer class="page-footer">
@@ -247,13 +272,22 @@
             <a class="socials__link socials__link--vkontakte" href="#">
               <span class="visually-hidden">Вконтакте</span>
             </a>
+            <a class="socials__link socials__link--vkontakte" href="#">
+              <span class="visually-hidden">Вконтакте</span>
+            </a>
           </li>
           <li class="socials__item">
             <a class="socials__link socials__link--youtube" href="#">
               <span class="visually-hidden">Youtube</span>
             </a>
+            <a class="socials__link socials__link--youtube" href="#">
+              <span class="visually-hidden">Youtube</span>
+            </a>
           </li>
           <li class="socials__item">
+            <a class="socials__link socials__link--telegram" href="#">
+              <span class="visually-hidden">Telegram</span>
+            </a>
             <a class="socials__link socials__link--telegram" href="#">
               <span class="visually-hidden">Telegram</span>
             </a>
