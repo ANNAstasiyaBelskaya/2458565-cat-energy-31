@@ -1,0 +1,1 @@
+var a=document.querySelector(".page-header__navigation"),e=document.querySelector(".main-navigation__toggle");a.classList.remove(".main-nav--nojs");e.addEventListener("click",()=>{a.classList.contains("main-nav--closed")?(a.classList.remove("main-nav--closed"),a.classList.add("main-nav--opened")):(a.classList.add("main-nav--closed"),a.classList.remove("main-nav--opened"))});
